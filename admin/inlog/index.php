@@ -31,10 +31,10 @@
 </form> --->
 	<div class="sidenav">
 		<div class="login-main-text">
-			<h2> Admin </h2>
+			<h2> Admin Dashboard </h2>
 		</div>
 	</div>
-	<div class="main">
+	<main>
 		<div class="col-md-6 col-sm-12">
 			<div class="login-form">
 				<form action="../inlogverwerk/" method="POST" role="form" class="login-form">
@@ -48,7 +48,7 @@
 									<div class="col-sm-6 col-sm-offset-3 form-box">
 										<div class="form-top">
 											<div class="form-top-left">
-												<h3> Log in </h3>
+												<h3> Inloggen </h3>
 												<p> Voer uw gebruikersnaam en wachtwoord in om in te loggen! </p>
 											</div>
 											<div class="form-top-right"> <i class="fa fa-lock"></i> </div>
@@ -56,13 +56,13 @@
 											<div class="form-group">
 												<p>
 													<label class="sr-only" for="Gebruikersnaam"> Gebruikersnaam </label>
-													<input type="text" name="Gebruikersnaam" id="Gebruikersnaam" placeholder="Voer uw gebruikersnaam in" required>
+													<input type="text" name="Gebruikersnaam" class="form-control" id="Gebruikersnaam" placeholder="Gebruikersnaam" required>
 												</p>
 											</div>
 											<div class="form-group">
 												<p>
 													<label class="sr-only" for="Wachtwoord"> Wachtwoord </label>
-													<input type="password" name="Wachtwoord" class="form-password form-control" id="Wachtwoord" placeholder="Voer uw wachtwoord in" required>
+													<input type="password" name="Wachtwoord" class="form-password form-control" id="Wachtwoord" placeholder="Wachtwoord" required>
 												</p>
 											</div>
 											<button type="submit" name="submit" class="btn btn-primary"> Inloggen </button>
@@ -71,10 +71,12 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</form>
+				<p class="mt-2"><a href="../../index.php">Terug</a> naar de hoofdpagina. </p>
 			</div>
 		</div>
-	</form>
+	</main>
+
 
 
 	<!-- Optionele JavaScript -->

@@ -7,7 +7,6 @@ session_start();
 require_once("../config/config.php");
 
 // Initialiseer alle variabelen.
-
 $Land_ID = 0;
 $update = false;
 $Land = '';
@@ -58,7 +57,7 @@ if(isset($_GET['edit'])){
 	
 	$Land_ID = $_GET['edit'];
 	$update = true;
-	$resultaat = $conn->query("SELECT * FROM EX_Landen WHERE LAND_ID=$Land_ID") or die($conn->error);
+	$resultaat = $conn->query("SELECT * FROM EX_Landen WHERE LAND_ID = $Land_ID") or die($conn->error);
 	if($resultaat->num_rows){
 		$rij = $resultaat->fetch_array();
 		$Land = $rij['Land'];
@@ -76,7 +75,7 @@ if(isset($_GET['edit'])){
 
 if(isset($_POST['update'])){
 	
-	$Land_ID = isset($_GET['LAND_ID']) ? $_GET['LAND_ID'] : '';
+	$Land_ID = $_POST['LAND_ID'];
 	$Land = $_POST['Land'];
 	$WG = $_POST['WG'];
 	$W = $_POST['W'];
@@ -86,12 +85,30 @@ if(isset($_POST['update'])){
 	$DT = $_POST['DT'];
 	$Punten = $_POST['Punten'];
 	
-	$conn->query("UPDATE EX_Landen SET Land='$Land', WG='$WG', W='$W', G='$G', V='$V', DV='$DV', DT='$DT', Punten='$Punten' WHERE LAND_ID = $Land_ID") or die($conn->error);
+	
+	//$conn->query("UPDATE EX_Landen SET Land='$Land', WG='$WG', W='$W', G='$G', V='$V', DV='$DV', DT='$DT', Punten='$Punten' WHERE LAND_ID=$Land_ID");
+	
+	$query = "UPDATE EX_Landen
+				SET
+				Land = '$Land',
+				WG = '$WG',
+				W = '$W',
+				G = '$G',
+				V = '$V',
+				DV = '$DV',
+				DT = '$DT',
+				Punten = '$Punten'
+				WHERE LAND_ID = $Land_ID";
+				
+	$resultaat = mysqli_query($conn, $query);
 	
 	$_SESSION['message'] = "Uw gekozen record is aangepast!";
 	$_SESSION['msg_type'] = "warning";
 	
-	header('location: ../index.php');
+//	if ($resultaat){
+//		header ("Location:index.php");
+//		exit;
+//	}
 	
 }
 

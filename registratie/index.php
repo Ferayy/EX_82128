@@ -35,11 +35,11 @@ $server = $_SERVER[ "REMOTE_ADDR" ];
 
 	<div class="sidenav">
 		<div class="login-main-text">
-			<h2 class="login-main-text"> Registreren </h1>
+			<h2 class="login-main-text"> Registreer je voor de poule! </h1>
        </div>
 	</div>
 	
-	<div class="main">
+	<main>
         <div class="col-md-6 col-sm-12">
            <div class="login-form">
 			<form action="../registratieverwerk/" method="POST">
@@ -70,7 +70,7 @@ $server = $_SERVER[ "REMOTE_ADDR" ];
 			</form>
 		</div>
 	</div>
-</div>
+</main>
 
     <!-- Einde van het registratie formulier. -->
 

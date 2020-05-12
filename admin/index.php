@@ -41,10 +41,6 @@
 
 		<?php
 
-		ini_set( 'display_errors', 1 );
-		ini_set( 'display_startup_errors', 1 );
-		error_reporting( E_ALL );
-
 		// Als het formulier is verstuurd
 		if ( isset( $_POST[ 'submit' ] ) ) {
 			// Lees de gegevens uit
@@ -72,7 +68,7 @@
 			}
 
 		}
-
+		
 		?>
 
 		<p> <a href="uitlog/"> Uitloggen </a> </p>
@@ -81,7 +77,7 @@
 
 		// Maak de query en selecteer alles in de tabel 'EX_Landen'.
 		$resultaat = $conn->query( "SELECT * FROM EX_Landen" )or die( $conn->error );
-		//$resultaat->fetch_assoc();
+
 		?>
 		<div class="row justify-content-center">
 			<table class="table">

@@ -1,74 +1,109 @@
+/* De body van de inlog. */
+
 body {
-    font-family: "Lato", sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
+/* Einde van de body. */
 
-.main-head{
-    height: 150px;
-    background: #FFF;
-   
+/* De main-head class van de login. */
+
+.main-head {
+	height: 150px;
+	background: #FFF;
 }
+
+/* Einde van de main-head class. */
+
+/* De side-nav class van de login. */
 
 .sidenav {
-    height: 100%;
-    background-color: #000;
-    overflow-x: hidden;
-    padding-top: 20px;
+	height: 100%;
+	background-color: #000;
+	overflow-x: hidden;
+	padding-top: 20px;
+	width: 40%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
 }
 
+/* Einde van de sidenav class. */
 
-.main {
-    padding: 0px 10px;
+/* Stijling van de main tag. */
+
+main {
+	padding: 0px 10px;
 }
+
+/* Einde van de stijling van de main tag. */
+
+/* Media queries voor overige apparaten. */
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+.sidenav {
+	padding-top: 15px;
+}
 }
 
 @media screen and (max-width: 450px) {
-    .login-form{
-        margin-top: 10%;
-    }
-
-    .register-form{
-        margin-top: 10%;
-    }
+.login-form {
+	margin-top: 10%;
+}
+.register-form {
+	margin-top: 10%;
+}
 }
 
-@media screen and (min-width: 768px){
-    .main{
-        margin-left: 40%; 
-    }
+@media screen and (min-width: 768px) {
+main {
+	margin-left: 40%;
+}
+	
+/* Einde van de stijling van de media queries. */
 
-    .sidenav{
-        width: 40%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
-
-    .login-form{
-        margin-top: 80%;
-    }
-
-    .register-form{
-        margin-top: 20%;
-    }
+/* Stijling van de login-form class. */
+	
+.login-form {
+	margin-top: 80%;
+}
+	
+/* Einde van stijling van de login-form class. */
+	
+/* Stijling van de register-form class. */
+	
+.register-form {
+	margin-top: 20%;
+}
+	
+/* Einde van stijling van de register-form class. */
+	
 }
 
+/* Stijling van de login-main-text class. */
 
-.login-main-text{
-    margin-top: 20%;
-    padding: 60px;
-    color: #fff;
+.login-main-text {
+	margin-top: 20%;
+	padding: 60px;
+	color: #fff;
 }
 
-.login-main-text h2{
-    font-weight: 300;
+/* Einde van stijling van de login-main-text class. */
+
+/* Stijling van de login-main-text h2 class. */
+
+.login-main-text h2 {
+	font-weight: 300;
 }
 
-.btn-black{
-    background-color: #000 !important;
-    color: #fff;
+/* Einde van stijling van de login-main-text h2 class. */
+
+/* Stijling van de btn-black class */
+
+.btn-black {
+	background-color: #000 !important;
+	color: #fff;
 }
+
+/* Einde van stijling van de btn-black class /*

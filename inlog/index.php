@@ -26,28 +26,28 @@ $server = $_SERVER[ "REMOTE_ADDR" ];
 <body>
 	<div class="sidenav">
 		<div class="login-main-text">
-			<h2> Overzichtspagina voor gebruikers. <br> Inloggen </h2>
-			<p> Log in of registreer om toegang te krijgen tot het overzicht </p>
+			<h2> Overzichtspagina voor gebruikers. </h2>
+			<p> Log in of registreer om toegang te krijgen tot het overzicht en deel te nemen aan de poule! </p>
 		</div>
 	</div>
-	<div class="main">
+	<main>
 		<div class="col-md-6 col-sm-12">
 			<div class="login-form">
 				<form action="../inlogverwerk/" method="POST">
 					<div class="form-group">
 						<label> Gebruikersnaam </label>
-						<input type="text" name="Gebruikersnaam" class="form-control" placeholder="Vul uw gebruikersnaam in">
+						<input type="text" name="Gebruikersnaam" class="form-control" placeholder="Gebruikersnaam">
 					</div>
 					<div class="form-group">
 						<label> Wachtwoord </label>
-						<input type="password" name="Wachtwoord" class="form-control" placeholder="Vul uw wachtwoord in">
+						<input type="password" name="Wachtwoord" class="form-control" placeholder="Wachtwoord">
 					</div>
 					<button type="submit" class="btn btn-black" name="submit"> Inloggen </button>
 				</form>
 				<p class="mt-2"> <a href="../"> Terug </a> naar de hoofdpagina </p>
 			</div>
 		</div>
-	</div>
+	</main>
 	<!-- Optionele JavaScript -->
 	<!-- jQuery, Popper, Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

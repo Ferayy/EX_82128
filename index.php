@@ -50,15 +50,13 @@
 	<main>
 
 		<h1 align="center"> Het EK voetbal! </h1>
-		<p> <a href="login/"> Log in </a> om deel te nemen en het overzicht te bekijken! </p>
-		<p> Zou je graag willen meedoen en heb je nog geen account? <a href="registratie/index.php">Registreer</a> dan nu! </p>
+		<p> <a href="inlog/"> Log in </a> om deel te nemen aan de poule en het overzicht te bekijken! </p>
+		<p> Zou je graag willen meedoen en heb je nog geen account? <a href="registratie/">Registreer</a> dan nu! </p>
 	
 	</main>
 	
 	<!-- Einde van de main content. -->
 	
-	
-
 	<!-- Optionele JavaScript -->
 	<!-- JQuery, Popper en Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
